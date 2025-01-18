@@ -1,25 +1,13 @@
 export function setupPrint() {
-  document.getElementById("print").addEventListener("click", async function () {
-    const { jsPDF } = window.jspdf;
-
-    // Get the element to convert
-    const element = document.getElementById("print-section");
-
-    // Convert element to canvas
-    const canvas = await html2canvas(element, { scale: 2 });
-    const imgData = canvas.toDataURL("image/png");
-
-    // Create jsPDF instance
-    const pdf = new jsPDF("p", "mm", "a4");
-
-    // Calculate dimensions
-    const pdfWidth = pdf.internal.pageSize.getWidth();
-    const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
-
-    // Add image to PDF
-    pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
-
-    // Save the PDF
-    pdf.save("result.pdf");
+  document.getElementById("print").addEventListener("click", function () {
+    printJS({
+      printable: "print-section", // The ID of the section to print
+      type: "html", // Type of content
+      style: `
+          body { font-family: Arial, sans-serif; margin: 20px; }
+          table { width: 100%; border-collapse: collapse; }
+          th, td { border: 1px solid #ddd; padding: 8px; }
+        `,
+    });
   });
 }
