@@ -115,7 +115,7 @@ export function calculateGPA() {
         <td class="border border-gray-300 px-4 py-2">${course.credits}</td>
         <td class="border border-gray-300 px-4 py-2">${course.grade}</td>
         <td class="border border-gray-300 px-4 py-2">
-          ${course.credits} * ${course.gradeValue} = ${course.gradePoint}
+          ${course.credits} <span class="text-[12px]">X</span> ${course.gradeValue} = ${course.gradePoint}
         </td>
       `;
       tbody.appendChild(row);
