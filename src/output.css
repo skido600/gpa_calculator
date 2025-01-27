@@ -860,11 +860,6 @@ video {
   background-color: rgb(21 45 88 / var(--tw-bg-opacity, 1));
 }
 
-.bg-\[\#D9F7FA\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(217 247 250 / var(--tw-bg-opacity, 1));
-}
-
 .bg-\[\#F8F9FA\] {
   --tw-bg-opacity: 1;
   background-color: rgb(248 249 250 / var(--tw-bg-opacity, 1));
@@ -873,6 +868,11 @@ video {
 .bg-\[\#f5f5f5\] {
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 245 / var(--tw-bg-opacity, 1));
+}
+
+.bg-blue-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity, 1));
 }
 
 .bg-gray-100 {
@@ -898,6 +898,19 @@ video {
 .bg-yellow-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 240 138 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#D9F7FA\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 247 250 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[linear-gradient\(to_right\2c \#4facfe_0\%\2c \#00f2fe_100\%\)\] {
+  background-image: linear-gradient(to right,#4facfe 0%,#00f2fe 100%);
+}
+
+.bg-\[linear-gradient\(to_top\2c \#4481eb_0\%\2c \#04befe_100\%\)\] {
+  background-image: linear-gradient(to top,#4481eb 0%,#04befe 100%);
 }
 
 .object-contain {
@@ -1034,14 +1047,14 @@ video {
   color: rgb(21 45 88 / var(--tw-text-opacity, 1));
 }
 
-.text-\[\#5B6D8B\] {
-  --tw-text-opacity: 1;
-  color: rgb(91 109 139 / var(--tw-text-opacity, 1));
-}
-
 .text-\[\#EEEEEE\] {
   --tw-text-opacity: 1;
   color: rgb(238 238 238 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#FFFFF0\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 240 / var(--tw-text-opacity, 1));
 }
 
 .text-black {
@@ -1067,6 +1080,11 @@ video {
 .text-yellow-800 {
   --tw-text-opacity: 1;
   color: rgb(133 77 14 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#5B6D8B\] {
+  --tw-text-opacity: 1;
+  color: rgb(91 109 139 / var(--tw-text-opacity, 1));
 }
 
 .transition-transform {
@@ -1142,6 +1160,8 @@ ul li {
   transition: top 0.5s ease-in-out;
 }
 
+/* background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); */
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1203,6 +1223,10 @@ ul li {
 
   .md\:bg-transparent {
     background-color: transparent;
+  }
+
+  .md\:bg-none {
+    background-image: none;
   }
 
   .md\:p-0 {
