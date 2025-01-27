@@ -2,6 +2,7 @@ export function setupTeams() {
   const teams = [
     { Name: "Ebisi Chinecherem Leonard", Reg: "NS/CSC/22/7428" },
     { Name: "Uzoka PraiseGod Chimpuluime", Reg: "NS/CSC/22/7494" },
+    { Name: "Orji Bethel Chidera", Reg: "NS/CSC/24/9154" },
   ];
 
   const teamMain = document.getElementById("teams");
