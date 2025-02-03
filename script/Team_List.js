@@ -5,6 +5,7 @@ export function setupTeams() {
     { Name: "Orji Bethel Chidera", Reg: "NS/CSC/24/9154" },
     {Name:"Sunday Jennifer Osemhenkhian", Reg: "NS/CSC/22/7545"},
     {Name:"Oyibo Nwachukwu",Reg:"Ns/csc/23/8284"},
+    {Name:"Oguchi chukwuemeka",Reg:"Ns/csc/22/7597"},
   ];
 
   const teamMain = document.getElementById("teams");
