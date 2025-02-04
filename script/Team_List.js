@@ -4,8 +4,9 @@ export function setupTeams() {
     { Name: "Uzoka PraiseGod Chimpuluime", Reg: "NS/CSC/22/7494" },
     { Name: "Orji Bethel Chidera", Reg: "NS/CSC/24/9154" },
     {Name:"Sunday Jennifer Osemhenkhian", Reg: "NS/CSC/22/7545"},
-    {Name:"Oyibo Nwachukwu",Reg:"Ns/csc/23/8284"},
-    {Name:"Oguchi chukwuemeka",Reg:"Ns/csc/22/7597"},
+    {Name:"Oyibo Nwachukwu",Reg:"NS/CSC/23/8284"},
+    {Name:"Oguchi chukwuemeka",Reg:"NS/CSC/22/7597"},
+    {Name:"Igboke Michael Chidera",Reg:"NS/CSC/22/7441"},
   ];
 
   const teamMain = document.getElementById("teams");
